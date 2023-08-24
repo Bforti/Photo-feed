@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cea567c56a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <!-- link bootstrap -->
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="padre d-flex justify-content-center align-items-center">
+        <div class="feed container m-4 p-0 bg-white">
+            <div class="header container p-0">
+                <nav class="navbar navbar-light bg-light">
+                    <div class="titulo ms-3">
+                        <span class="navbar-brand mb-0 h1 d-flex align-items-center">
+                            <i class="fa-brands fa-instagram fa-xl" style="color: #000000;"></i>
+                            <h3 class="ms-1">Instagram</h3>
+                        </span>
+                    </div>
+                    <div class="botones d-flex align-items-center justify-content-center me-2">
+                        <div class="post me-2">
+                            <form class="d-flex">
+
+                                <button type="button" class="btn btn-primary bg-success" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    Create a new post
+                                </button>
+                                <div class="modal fade container-fluid" id="staticBackdrop" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content container-fluid">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="staticBackdropLabel">Create a new post</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body container-fluid">
+                                                <label for="exampleFormControlTextarea1" class="form-label"><h6>Caption</h6></label>
+                                                <textarea class="form-control"
+                                                 id="exampleFormControlTextarea1"
+                                                 rows="3" placeholder="añade un comentario para tu publicación"></textarea>
+                                                 <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-2">
+                                                    <button class= "rounded border border-1"type="button"><i class="fa-solid fa-camera fa-lg" style="color: #000000;"></i></button>
+                                                    <button class= "rounded border border-1"type="button"><i class="fa-solid fa-location-dot fa-lg" style="color: #000000;"></i></button>
+                                                  </div>
+                                            
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-success">Publish</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="opc ms-1">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-gear fa-lg" style="color: #f5f5f5;"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-white dropdown-menu-end"
+                                    aria-labelledby="dropdownMenuButton2">
+                                    <li><a class="dropdown-item active" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item " href="#">Something else here</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><p class="text-danger">log out</p> </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+            <div class="cuerpo container d-flex flex-column align-items-center mt-2 p-0">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true"><i class="fa-solid fa-table-cells fa-xl" style="color: #c3cfe5;"></i></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false"><i class="fa-solid fa-stop fa-xl" style="color: #c3cfe5;"></i>
+                        </button>
+                    </li>
+                </ul>
+                <div class="cuadricula tab-content d-flex p-2 " id="pills-tabContent">
+                    <div class="tab-pane fade active show" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="https://i.pinimg.com/236x/fb/12/35/fb123569b44b2746f2d58927d0db30fc.jpg"
+                                    class="object-fit-fill border rounded" alt="...">
+                            </div>
+                            <div class="col-4">
+                                <img src="https://i.pinimg.com/236x/6b/e0/50/6be0503c790634a93ab0786c28647cac.jpg"
+                                    class="object-fit-fill border rounded" alt="...">
+                            </div>
+                            <div class="col-4">
+                                <img src="https://i.pinimg.com/236x/51/3c/7b/513c7b3585e0ec1557da45935a8b2160.jpg"
+                                    class="object-fit-fill border rounded" alt="...">
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-4">
+                                <img src="https://i.pinimg.com/236x/7b/32/1f/7b321ff98e2f4c5eb906443dbb86d342.jpg"
+                                    class="object-fit-fill border rounded" alt="...">
+                            </div>
+                            <div class="col-4">
+                                <img src="https://i.pinimg.com/236x/4d/a3/d6/4da3d69242a9a76aea7404edf6739851.jpg"
+                                    class="object-fit-fill border rounded" alt="...">
+                            </div>
+                            <div class="col-4">
+                                <img src="https://i.pinimg.com/236x/7d/95/2a/7d952a315647068feeb1710976174949.jpg"
+                                    class="object-fit-fill border rounded" alt="...">
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-4">
+                                <img src="https://i.pinimg.com/236x/53/20/e5/5320e5ca33075c500591666e563eaab0.jpg"
+                                    class="object-fit-fill border rounded" alt="...">
+                            </div>
+                            <div class="col-4">
+                                <img src="https://i.pinimg.com/236x/f5/8b/92/f58b9223ffdb0fc5b4ba2d175b4cd1d2.jpg"
+                                    class="object-fit-fill border rounded" alt="...">
+                            </div>
+                            <div class="col-4">
+                                <img src="https://i.pinimg.com/236x/7b/b6/1f/7bb61fdb48610b7821c43b521e4b1044.jpg"
+                                    class="object-fit-fill border rounded" alt="...">
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lista tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                    tabindex="0">
+                    <div class="row container d-flex flex-column border border-1">
+                        <div class="titulo d-flex align-items-center justify-content-between ">
+                            <div class="comentario">
+                                <h2>Un verdadero Genio</h2>
+                            </div>
+                            <div class="fecha">23/08</div>
+                        </div><img src="https://i.pinimg.com/236x/fb/12/35/fb123569b44b2746f2d58927d0db30fc.jpg"
+                            alt="foto">
+                        <div class="pie-foto">
+                            <h5>1000 likes</h5>
+                            <p>James C. Maxwell es uno de los más grandes matemáticos que ha existido, contribuyó al
+                                mundo con sus famosas ecuaciones</p>
+                        </div>
+                    </div>
+                    <div class="row container d-flex flex-column border border-1 mt-2">
+                        <div class="titulo d-flex align-items-center justify-content-between">
+                            <div class="comentario">
+                                <h2>Mira esta pintura!!</h2>
+                            </div>
+                            <div class="fecha">17/07</div>
+                        </div><img src="https://i.pinimg.com/236x/6b/e0/50/6be0503c790634a93ab0786c28647cac.jpg" alt="">
+                        <div class="pie-foto">
+                            <h5>1210 likes</h5>
+                            <p>La monalisa es una de las pinturas más famosas, ¿qué tal esta versión?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row container d-flex flex-column border border-1 mt-2">
+                        <div class="titulo d-flex align-items-center justify-content-between">
+                            <div class="comentario">
+                                <h2>Un prodigio del automovilismo</h2>
+                            </div>
+                            <div class="fecha">30/06</div>
+                        </div><img src="https://i.pinimg.com/236x/51/3c/7b/513c7b3585e0ec1557da45935a8b2160.jpg" alt="">
+                        <div class="pie-foto">
+                            <h5>1510 likes</h5>
+                            <p>Ayrton fue de esos maravillosos pilotos que siempre quedarán grabados en la memoria 
+                                de los fanáticos de la fórmula 1
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row container d-flex flex-column border border-1 mt-2">
+                        <div class="titulo d-flex align-items-center justify-content-between">
+                            <div class="comentario">
+                                <h2>Mad-Max</h2>
+                            </div>
+                            <div class="fecha"> 20/05</div>
+                        </div><img src="https://i.pinimg.com/236x/7b/32/1f/7b321ff98e2f4c5eb906443dbb86d342.jpg" alt="">
+                        <div class="pie-foto">
+                            <h5>1420 likes</h5>
+                            <p>Verstappen es uno de esos pilotos destinados a la grandeza del mundo de la F1</p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
